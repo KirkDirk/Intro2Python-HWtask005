@@ -5,5 +5,12 @@
 # - A (3,6); B (2,1) -> 5,09
 # - A (7,-5); B (1,-1) -> 7,21
 
-x = int(input('Введите координаты x: '))
-y = int(input('и координату y: '))
+point1 = point2 = [2]
+point1 = list(map(int, input('Введите координаты первой точки x1 и y1: ').split()))
+point2 = list(map(int, input('Введите координаты второй точки x2 и y2: ').split()))
+print('Точка 1 ', (point1[0], point1[1]))
+print('Точка 2 ', (point2[0], point2[1]))
+dis = 0
+for i in 0, 1:
+    dis += (point1[i] - point2[i])**2
+print('Расстояние между двумя точками = ', round((dis**0.5),3))
